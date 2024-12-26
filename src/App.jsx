@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavbarComponent from './Components/NavbarComponent.jsx';
 import FooterComponent from './Components/FooterComponent.jsx';
-import HomePage from './pages/HomePage';
+import HomePageComponent from './Pages/HomePageComponent.jsx';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage'
 import LocationAndSports from './pages/LocationAndSports';
@@ -30,7 +30,7 @@ const App = () => {
               <AuthProvider>
                   <NavbarComponent />
                   <Routes>
-                      <Route path="/home" element={<HomePage />} />
+                      <Route path="/home" element={<HomePageComponent />} />
                       <Route path="/signup" element={<SignupPage />} />
                       <Route path="/login" element={<LoginPage />} />
                       <Route path="/location" element={
