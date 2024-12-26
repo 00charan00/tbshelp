@@ -3,7 +3,7 @@ import { useAuth } from "../utils/AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
 
 const NavbarComponent = () => {
-    const { isAuthenticated, logout } = useAuth();
+    const {logout } = useAuth();
     const navigate = useNavigate();
     const [showDropdown, setShowDropdown] = useState(false);
     const [showLoginDropdown, setShowLoginDropdown] = useState(false);

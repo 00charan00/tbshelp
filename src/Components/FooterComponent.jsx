@@ -1,4 +1,4 @@
-const Footer = () => {
+const FooterComponent = () => {
     const styles = {
         footer: {
             display: "flex",
@@ -75,4 +75,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterComponent;

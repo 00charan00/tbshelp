@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavbarComponent from './Components/NavbarComponent.jsx';
-import Footer from './components/Footer';
+import FooterComponent from './Components/FooterComponent.jsx';
 import HomePage from './pages/HomePage';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage'
@@ -90,7 +90,7 @@ const App = () => {
                       <Route path="/payment" element={<PaymentPage/>} />
                       <Route path="/confirmpayment" element={<ConfirmPayment/>} />
                   </Routes>
-                  <Footer />
+                  <FooterComponent />
               </AuthProvider>
           </div>
       </Router>
